@@ -1,4 +1,3 @@
-
 #un parqueadero registra el ingreso y salida de vehiculos, el sistema lleva un conteo de por #ejemplo: 
 
 #motos
@@ -21,10 +20,11 @@ controlBln = True
 while controlBln == True :
 
     opciones = input( '\n\.  \n1. motos \n2. carros \n3. bicis  \n4. patinetas \n5. mostrar \n.6 salir \n.opcion es - > ' )
-    movimientoStr =  input('\n1. entrada  \n2. salida')
+    
     
     if opciones == '1':
         cantidad_motosInt = int(input('ingrese una cantidad de motos -> '))
+        movimientoStr =  input('\n1. entrada  \n2. salida \n.opcion -> ')
         if movimientoStr == "1":
             motos += cantidad_motosInt
         if movimientoStr == '2': 
@@ -34,6 +34,7 @@ while controlBln == True :
                 print("no hay tantos vehiculos registrados")
     elif opciones == '2':
         cantidad_carrosInt = int(input('ingrese la cantidad  de carros -> ') )
+        movimientoStr =  input('\n1. entrada  \n2. salida \n.opcion -> ')
         if movimientoStr == '1':
             carros += cantidad_carrosInt
         if movimientoStr == '2':
@@ -43,6 +44,7 @@ while controlBln == True :
                 print("No hay tantos carros disponibles")
     elif opciones == '3':
         cantidad_bicicletasInt = int(input('ingrese la cantidad de  bicicletas -> '))
+        movimientoStr =  input('\n1. entrada  \n2. salida \n.opcion -> ')
         if movimientoStr == '1':
             bicis += cantidad_bicicletasInt
         if movimientoStr == '2':
@@ -52,6 +54,7 @@ while controlBln == True :
                 print('No hay tanto en bicicletas') 
     elif opciones == '4':
         cantidad_patinetasInt = int(input('ingrese la cantidad de patinetas -> '))
+        movimientoStr =  input('\n1. entrada  \n2. salida \n.opcion -> ')
         if movimientoStr == '1':
             patinetas += cantidad_patinetasInt
         if movimientoStr  == '2':
